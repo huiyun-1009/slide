@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+.slide {
+    width: 500px;
+    height: 300px;
+    border: 1px solid red;
+    position: relative;
+    margin: 50px auto;
+    /* overflow: hidden; */
+}
+.panel {
+    width: 500%;
+    display: flex;
+}
+
+.panel li {
+    width: 500px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.panel li:nth-child(1) {
+    background-image: url(../img/summer1.jpg);
+}
+.panel li:nth-child(2) {
+    background-image: url(../img/summer2.jpg);
+}
+
+.panel li:nth-child(3) {
+    background-image: url(../img/summer3.jpg);
+}
+
+.panel li:nth-child(4) {
+    background-image: url(../img/summer4.jpg);
+}
+.panel li:nth-child(5) {
+    background-image: url(../img/summer1.jpg);
+}
+
+.navi {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navi li {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.navi li.on {
+    background-color: red;
+}
+a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 30px;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
